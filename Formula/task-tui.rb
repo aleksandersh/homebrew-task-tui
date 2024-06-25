@@ -5,21 +5,21 @@
 class TaskTui < Formula
   desc "Terminal user interface for Task"
   homepage "https://github.com/aleksandersh/task-tui/"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.1/task-tui_darwin_amd64.tar.gz"
-      sha256 "11c0663114ce1bc028a53555b9b30c212fcfe9028763046838f83f2cdbe966e7"
+      url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.2/task-tui_darwin_amd64.tar.gz"
+      sha256 "65ecc5e7295bc7e0c8c7317d477d81db7b4ef94afe0115e6d5266ae4a146647f"
 
       def install
         bin.install "task-tui"
       end
     end
     on_arm do
-      url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.1/task-tui_darwin_arm64.tar.gz"
-      sha256 "adede9bf5e71130b2d13b16db36d884b889a8b50ed4078d132f6b520b45b5b5c"
+      url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.2/task-tui_darwin_arm64.tar.gz"
+      sha256 "ec08cd1a4143a57f8138dee5e763a7cd5368168d371d6eec2c5eb51f2cdfe0e3"
 
       def install
         bin.install "task-tui"
@@ -30,8 +30,8 @@ class TaskTui < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.1/task-tui_linux_amd64.tar.gz"
-        sha256 "ada5a3be5a648d2b276bc5a41f67c0d0fe3ca16a293cbaca4f6ef69cfeb42da8"
+        url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.2/task-tui_linux_amd64.tar.gz"
+        sha256 "a2a4e029190eb3753c64a187ace534d44953bcdc2c00a7711858fba7692d2f5f"
 
         def install
           bin.install "task-tui"
@@ -40,8 +40,8 @@ class TaskTui < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.1/task-tui_linux_arm.tar.gz"
-        sha256 "6390487c523d34ddd1a3c9fcc3ad921322db62595ab6c4d4ede491c5b5caaf6b"
+        url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.2/task-tui_linux_arm.tar.gz"
+        sha256 "42005a3fdc0f1c679c8071ff3fa0bf106ee3378b2a865b3f9c9d667b95481eee"
 
         def install
           bin.install "task-tui"
@@ -50,8 +50,8 @@ class TaskTui < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.1/task-tui_linux_arm64.tar.gz"
-        sha256 "569206f230ad4600a8ca813f43882e500d164b2daf2f35687cd5240824334701"
+        url "https://github.com/aleksandersh/task-tui/releases/download/v0.0.2/task-tui_linux_arm64.tar.gz"
+        sha256 "dc64cc593299bbb51dda965a22a90b6d1154b093f5e5b1996e55ae4efb3d06fa"
 
         def install
           bin.install "task-tui"
